@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.gotit.quyle.dnn_dm3.test.PortraitCameraView
+        android:id="@+id/tutorial1_activity_java_surface_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        opencv:camera_id="any"
+        opencv:show_fps="false" />
+    <View
+        android:id="@+id/bouding_box_id"
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:background="@drawable/camera_bouding_box"
+        android:visibility="visible" />
+
+    <!--<org.opencv.android.NativeCameraView-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:visibility="gone"-->
+    <!--android:id="@+id/tutorial1_activity_native_surface_view"-->
+    <!--opencv:show_fps="true"-->
+    <!--opencv:camera_id="any" />-->
+
+</RelativeLayout>
